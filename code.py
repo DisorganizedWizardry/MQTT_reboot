@@ -49,7 +49,7 @@ def message(client, topic, message):
             analog_out.value = 65535
             mqtt_client.publish(secrets["mqtt_topic"], "status:power_off")
 
-            time.sleep(5)
+            time.sleep(secrets["reboot_time"])
 
             analog_out.value = 0
             mqtt_client.publish(secrets["mqtt_topic"], "status:reboot_done")

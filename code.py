@@ -21,6 +21,7 @@ def disconnect(mqtt_client, userdata, rc):
     # This method is called when the mqtt_client disconnects
     # from the broker.
     print("Disconnected from MQTT Broker!")
+    led.fill(ORANGE)
     wifi_connected = False
 
 def subscribe(mqtt_client, userdata, topic, granted_qos):

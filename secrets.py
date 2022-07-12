@@ -11,5 +11,5 @@ secrets = {
     'mqtt_broker' : '192.168.0.0',
     'mqtt_port' : 1883, 
     'mqtt_topic' : 'ard/router',
-    'reboot_timer' : 30
+    'reboot_time' : 30
     }
